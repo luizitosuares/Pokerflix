@@ -1,101 +1,107 @@
-:root{
-    --vermelho:#0968e5;
-    --preta:hsl(241, 83%, 30%);
+:root {
+--vermelho: #0968e5;
+--preta: hsl(241, 83%, 30%);
 }
 
-body{
-    background: var(--preta);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: beige;
+body {
+background: var(--preta);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: beige;
 }
 
-*{
+{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
-header .container{
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
+header .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-header .Logo{
-    margin: left 10px; ;
-    color: gray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 38px;
+header .Logo {
+margin-left: 10px;
+color: gray;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 38px;
 }
 
-header nav a{
-    text-decoration: none;
-    color: red;
-    margin-right: 10px;
+header nav a {
+text-decoration: none;
+color: var(--vermelho);
+margin-right: 10px;
 }
 
-
-header nav a:hover{
-    color: black;
+header nav a:hover {
+color: black;
 }
 
-.filme-principal{
-    font-size: 17px;
-    background:url('/img/Pedro-Garagnani-2.jpeg');  
-    font-family: 'Times New Roman', Times, serif;    
-    height: 400px;
-    background-size: cover;
-      
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-  
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
+.filme-principal {
+font-size: 17px;
+background: url('/img/Pedro-Garagnani-2.jpeg');
+font-family: 'Times New Roman', Times, serif;
+height: 400px;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+margin-bottom: 15px;
 }
 
-.TITULO{
-    font-size: 40px;
+.filme-principal .descricao {
+margin-top: 10px;
+margin-bottom: 40px;
 }
 
-.botao{
-    background-color: rgb(0, 0, 50);
-    border: none;
-    color: beige;
-
-    padding: 15px 50px;
-    margin-right: 15px;
-    font-size: 15px;
-    font-family: fantasy;
-
-    cursor: pointer;
-    transition:3s ease all;
+.TITULO {
+font-size: 40px;
 }
 
-
-.botao:houver{
-    background-color: aliceblue;
-    color: black;
+.botao {
+background-color: rgb(0, 0, 50);
+border: none;
+color: beige;
+padding: 15px 50px;
+margin-right: 15px;
+font-size: 15px;
+font-family: fantasy;
+cursor: pointer;
+transition: 3s ease all;
 }
 
-.botao i{
-    margin-right:5px ;
+.botao:hover {
+background-color: aliceblue;
+color: black;
 }
 
-.container{
-    margin-left: 30px;
+.botao i {
+margin-right: 5px;
 }
 
-.filme-principal .container{
-    width: 70%;
+.container {
+margin-left: 30px;
 }
 
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
+.filme-principal .container {
+width: 70%;
+}
+
+.carrossel-filmes .box-filme {
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
+
+.carrossel-filmes .item img {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.ajuste-imagem {
+width: 200%;
+height: auto;
+object-fit: cover;
 }
