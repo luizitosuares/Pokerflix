@@ -110,22 +110,10 @@ background-image: url('img/Cassio-Kiles-2.jpg');
 
 }
 
-.teste{
+.container2{
+    width: 100%;
+    height: 500%;
+    background-color: darkgreen;
+    padding: 290px;
 
-    width: auto;
-    height:auto;
-background:#c5b415;
-}
-
-.box {
-
-    width: auto;
-    height:auto;
-
-}
-
-#total{
-
-    background-color: black;
-bottom: 0;
 }

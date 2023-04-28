@@ -15,3 +15,12 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+$(document).ready(function() {
+    $('.scroll-link').click(function(e) {
+        e.preventDefault(); // previne o comportamento padrão do link
+        var target = $(this).attr('data-target'); // pega o valor do atributo data-target do link clicado
+        $('html, body').animate({
+            scrollTop: $(target).offset().top // rola a página para a div com o id correspondente
+        }, 1000); // tempo em milissegundos da animação de rolagem suave
+    });
+});
