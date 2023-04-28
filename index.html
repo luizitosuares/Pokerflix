@@ -24,7 +24,19 @@
         <div class="container" id="container2">
             <h2 class="Logo">PokerPrime</h2>
             <nav>
-                <a href="#" class="scroll-link" data-target="#container2">Carreira</a>
+
+                <script>
+                    function scrollToContainer() {
+                        const container = document.querySelector('#container3');
+                        container.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            inline: 'nearest',
+                            duration: 10000
+                        });
+                    }
+                </script>
+                <button onclick="scrollToContainer()">Carreira</button>
                 <a href="#">Torneios</a>
                 <a href="#">Mindset</a>
                 <a href="#">Reviews</a>
@@ -66,7 +78,7 @@
     </div>
     </div>
 
-    <div class="container2">
+    <div class="container2" id="container3">
         <h2>oi, nelson</h2>
         <a href="#container2" class="scroll-link" data-target="#container2">Carreira</a>
     </div>
